@@ -18,6 +18,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   height: 100vh;
+  margin-bottom: 50px;
 }
 
 .p-introduction {
@@ -30,6 +31,7 @@ body {
   color: white;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 10px;
   font-size: calc(32px + 2*(100vw - 420px)/1600);
 }
 
@@ -37,7 +39,9 @@ body {
   color: #06d6a0;
   font-weight: bold;
 }
-
+.github-account {
+  margin:20px;
+  }
 #github-img {
   fill: white;
   float: right;
@@ -51,7 +55,7 @@ body {
   width: 100%;
   z-index: -1;
   -webkit-transform: skew(0deg, 10deg);
-  transform: skew(0deg, 10deg);
+  transform: skew(0deg, 1deg);
   transform-origin: center right;
 }
 
@@ -86,6 +90,7 @@ body {
   padding: 0 20px;
   justify-content: center;
   margin: 0 16px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -208,6 +213,7 @@ footer{
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 500%);
+    margin: 0;
   }
 
   #github-img {

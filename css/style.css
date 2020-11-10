@@ -4,13 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face{
+  font-family: 'Gotham Pro';
+  src:url('./GothaProReg.otf')
+}
 
 body {
   background-color: #121212;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: "Gotham Pro";
+  font-family: Gotham Pro;
 }
 
 .row {

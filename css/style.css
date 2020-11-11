@@ -6,6 +6,7 @@
 }
 @font-face{
   font-family: 'Gotham Pro';
+  font-display:block;
   src:url('./GothaProReg.otf')
 }
 
@@ -112,10 +113,11 @@ body {
   box-shadow: 0 3px 18px rgba(0, 0, 0, 0.6);
 }
 
-.card h3 {
+.card h2{
   align-self: center;
   color: #06d6a0;
   margin: 5px;
+  font-size: 1.17em;
 }
 .icon{
   font-size:24px;
@@ -135,7 +137,7 @@ body {
 }
 .projects .box{
   width: 320px;
-  padding: 25px 50px;
+  padding: 25px 30px;
   margin: 25px;
   display: flex;
   flex-direction: column;
@@ -160,8 +162,9 @@ body {
 .projects a:hover{
   color: #0062d2;
 }
-.projects .box h3{
+.projects .box h2{
   margin: 5px 0;
+  font-size: 1.17em;
   color: #06d6a0;
 }
 footer{

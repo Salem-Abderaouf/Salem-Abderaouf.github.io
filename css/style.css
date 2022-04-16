@@ -22,7 +22,6 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  height: 100vh;
   margin-bottom: 50px;
 }
 
@@ -67,19 +66,21 @@ background-attachment: unset;
   transform: skew(0deg, 1deg);
   transform-origin: center right;
 }
-.img:after {
+.p-picture:after {
   content: "";
-  
   background-image: linear-gradient(270deg,
       rgba(36, 41, 46, 0) 0%,
       #121212 90%);
-  width: 80%;
+  width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   position: absolute;
   display: block;
   z-index: 1;
+  -webkit-transform: skew(0deg, 10deg);
+  transform: skew(0deg, 1deg);
+  transform-origin: center right;
 }
 
 .divider h1 {

@@ -1,4 +1,7 @@
-/* color palatte PRIMARY :#06d6a0 , SECONDARY:#aa8dff */
+:root {
+  --primary: #06d6a0;
+  --secondary: #aa8dff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +43,7 @@ body {
 }
 
 .p-introduction p {
-  color: #06d6a0;
+  color: var(--primary);
   font-weight: bold;
 }
 .github-account {
@@ -87,6 +90,7 @@ background-attachment: unset;
   color: white;
   text-align: center;
   padding: 10px 0;
+  margin-bottom: 20px;
 }
 
 .skills {
@@ -116,7 +120,7 @@ background-attachment: unset;
 
 .card h2{
   align-self: center;
-  color: #06d6a0;
+  color: var(--primary);
   margin: 5px;
   font-size: 1.17em;
 }
@@ -129,35 +133,44 @@ background-attachment: unset;
   padding: 10px 0;
 }
 .projects{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  margin:0 40px;
+  max-width: 980px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 220px);
+  grid-auto-rows: minmax(40px, auto);
+  justify-content: center;	
 }
+.p1 { grid-row-end: span 2; }
+.p2 { grid-row-end: span 1; }
+.p3 { grid-row-end: span 2; }
+.p4 { grid-row-end: span 3; }
+.p5 { grid-row-end: span 2; }
+.p6 { grid-row-end: span 1; }
+.p7 { grid-row-end: span 2; }
+.p8 { grid-row-end: span 3; }
+.p9 { grid-row-end: span 2; }
+.p10 { grid-row-end: span 1; }
+.p11 { grid-row-end: span 2; }
+.p12 { grid-row-end: span 3; }
+.p13 { grid-row-end: span 2; }
+
 .projects .box{
-  width: 320px;
   padding: 25px 30px;
-  margin: 25px;
   display: flex;
   flex-direction: column;
   border-radius:8px ;
- transition: box-shadow 0.5s linear;
- box-shadow: 0 3px 18px rgba(0, 0, 0, 0.6);
-}
-.projects .box:hover{
+  transition: background-color 0.5s linear;
   box-shadow: 0 3px 18px rgba(0, 0, 0, 0.6);
-}
+  justify-content: space-around;
+} 
 .box p{
   line-height: 1.5;
-  margin: 15px 0;
   color: #fff;
 }
 .projects a{
   align-self: flex-end;
   text-decoration: none;
-  margin: 5px 0;
   color: #aa8dff;
   transition: color .4s linear;
 }
@@ -167,7 +180,7 @@ background-attachment: unset;
 .projects .box h2{
   margin: 5px 0;
   font-size: 1.17em;
-  color: #06d6a0;
+  color: var(--primary);
 }
 footer{
   margin-top: 20px;
@@ -183,7 +196,10 @@ footer{
 
   .row {
     display: block;
-    height: 100vh;
+    height: 100
+    .projects .box:hover{
+      background-color: white;
+    }vh;
   }
 
   .skills {
@@ -212,7 +228,7 @@ footer{
   }
 
   .p-introduction p {
-    color: #06d6a0;
+    color: var(--primary);
     font-weight: bold;
     text-align: center;
   }
@@ -230,7 +246,7 @@ footer{
     transition: fill .4s linear;
   }
   #github-img:hover{
-    fill:#06d6a0;
+    fill:var(--primary);
   }
   .p-picture {
   height: 100%;

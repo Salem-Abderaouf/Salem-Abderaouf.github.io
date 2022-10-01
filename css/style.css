@@ -144,6 +144,7 @@ background-attachment: unset;
   flex-direction: column;
   border-radius:8px ;
  transition: box-shadow 0.5s linear;
+ box-shadow: 0 3px 18px rgba(0, 0, 0, 0.6);
 }
 .projects .box:hover{
   box-shadow: 0 3px 18px rgba(0, 0, 0, 0.6);
